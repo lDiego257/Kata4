@@ -43,4 +43,10 @@ mod tests{
       let actual = super::kata4(&mut array);
       assert_eq!(actual, [1,2,3]);
  }
+ #[test]
+ fn escenario314(){
+     let mut array: [i32;5] = [80,80,80,80,44];
+     let actual = super::kata4(&mut array);
+     assert_eq!(actual, [44,80]);
+}
 }
